@@ -4,7 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN ./mvnw clean install
 
 EXPOSE 8080
 
