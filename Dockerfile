@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . /app
 
+# Añadimos los certificados necesarios para SSL de MongoDB
+RUN apt-get update && apt-get install -y ca-certificates && ./mvnw clean install
 
 EXPOSE 8080
 
